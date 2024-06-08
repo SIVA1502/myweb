@@ -24,6 +24,20 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <version>3.8.1</version> <!-- Use the latest version of the plugin -->
+	        <configuration>
+	          <source>1.7</source> <!-- Set Java source compatibility level to 1.7 -->
+	          <target>1.7</target> <!-- Set Java target compatibility level to 1.7 -->
+	        </configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
 	
 	<distributionManagement>
 		 <snapshotRepository>
